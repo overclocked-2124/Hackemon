@@ -1,0 +1,35 @@
+Thematic Title & Story
+
+Team Rocket's Crypto Facility: Operation Digital Infiltration
+
+Team Rocket has established a sophisticated digital fortress to protect their master plan for Pokémon world domination! Their cyber-security division has deployed a multi-layered encryption system based on Pokémon type effectiveness, thinking no Trainer could possibly crack their "unbreakable" code.
+
+Professor Oak's cyber-intelligence unit has discovered Team Rocket's secret facility online, but it's heavily protected by digital barriers. Your mission: infiltrate their crypto facility, exploit their security vulnerabilities, and decrypt their classified master plan to stop their evil scheme!
+Problem Description (for Trainers)
+
+Trainer Challenge:
+Team Rocket believes their digital fortress is impenetrable, but every system has weaknesses waiting to be discovered!
+
+Access the intercepted Team Rocket facility below and complete your infiltration mission:
+
+Your objectives:
+
+    Analyze intercepted communications - Decode their binary protocol messages
+
+    Exploit their database vulnerabilities - Use your hacking skills to access restricted information
+
+    Crack their encryption system - Reverse engineer their Pokémon-themed cipher
+
+    Chain your exploits together - Combine all discovered vulnerabilities to recover the master flag
+
+Challenge URL: https://team-rocket-cypher.vercel.app/
+
+Use all your cyber-Pokédex skills: analyze binary data, exploit SQL injection vulnerabilities, perform cryptographic analysis, and chain multiple attack vectors together. Look for clues in protocol messages, database entries, and encrypted payloads.
+
+Difficulty: Hard (Multi-stage exploitation required)
+Skills needed: Reverse Engineering, SQL Injection, Cryptography, Binary Analysis
+
+Flag format: CTF{...}
+Example: If you successfully infiltrate and decrypt their system, you might find CTF{TEAM_ROCKET_CRYPTO_MASTER_2025}
+
+Answer: CTF{TEAM_ROCKET_CRYPTO_MASTER_2025}
