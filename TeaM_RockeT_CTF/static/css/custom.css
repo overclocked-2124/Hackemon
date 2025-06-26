@@ -1,0 +1,98 @@
+/* Custom animations and effects */
+@keyframes matrix-rain {
+    0% { transform: translateY(-100vh); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+}
+
+.matrix-bg::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 0, 0.03), transparent);
+    animation: matrix-rain 20s linear infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Glitch effect for headers */
+.glitch {
+    position: relative;
+    animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+    0%, 100% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+}
+
+/* Glow effect */
+@keyframes glow {
+    0%, 100% { box-shadow: 0 0 20px #fcd34d; }
+    50% { box-shadow: 0 0 30px #fcd34d, 0 0 40px #fcd34d; }
+}
+
+.glow { 
+    animation: glow 2s ease-in-out infinite;
+}
+
+/* Responsive scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dc2626;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ef4444;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .font-retro {
+        font-size: 0.875rem;
+    }
+    
+    textarea, input {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+}
+
+/* Anti-cheat styling */
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Loading animations */
+.pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Terminal-like effects */
+.terminal-cursor::after {
+    content: '█';
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
