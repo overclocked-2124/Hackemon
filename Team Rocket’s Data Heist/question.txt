@@ -1,0 +1,1 @@
+During a recent raid on Team Rocket’s hideout, you’ve intercepted a mysterious data transmission: a file named rocket_pokedex.csv. The file contains a massive grid representing a Pokédex entry in encoded form. Your challenge is to decode this grid and reveal the hidden message.

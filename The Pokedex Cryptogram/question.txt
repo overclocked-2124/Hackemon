@@ -1,0 +1,1 @@
+Team Rocket has intercepted a top-secret Pokédex transmission now stored as a cryptic ciphertext in the file encrypted_pokedex.texts, and your challenge is to decrypt this ciphertext to reveal the Pokédex’s hidden contents and submit the decoded message in the format hackemon{decoded_string} before Team Rocket can act on their discovery.
