@@ -29,7 +29,7 @@ Use all your cyber-Pokédex skills: analyze binary data, exploit SQL injection v
 Difficulty: Hard (Multi-stage exploitation required)
 Skills needed: Reverse Engineering, SQL Injection, Cryptography, Binary Analysis
 
-Flag format: CTF{...}
+Flag format: hackemon{...}
 Example: If you successfully infiltrate and decrypt their system, you might find CTF{TEAM_ROCKET_CRYPTO_MASTER_2025}
 
-Answer: CTF{TEAM_ROCKET_CRYPTO_MASTER_2025}
+Answer: hackemon{TEAM_ROCKET_CRYPTO_MASTER_2025}
