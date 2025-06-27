@@ -1,0 +1,36 @@
+Chrono-Cipher Conundrum
+
+Category: Web Exploitation / Reverse Engineering / Timing Attacks  
+Difficulty: Very Hard
+
+Description:
+You've stumbled upon an experimental temporal synchronization interface.
+Legend has it, a secret flag is locked behind the Chronos Gate, protected by layers of time-sensitive protocols and unseen echoes from the past.
+
+The interface appears simple, but the truth is hidden beyond the visible spectrum.
+To retrieve the flag, you must meticulously interact with the system, decode its ephemeral whispers, and achieve perfect temporal resonance.
+
+Your Mission: Discover the hidden flag.
+
+Hints to guide your temporal journey:
+
+Phase 1: The Ephemeral Anomaly  
+- The truth is fleeting — it appears only for a fraction of a second.  
+- Human eyes might not be fast enough.  
+- What loads on the page... and when?
+
+Phase 2: Resonating with the Past  
+- Sending feedback is not enough — your message needs the right temporal signature.  
+- Some parts of a request are invisible to the naked eye.  
+- How do web requests carry hidden information?
+
+Phase 3: The Chronos Gate's Swift Guard  
+- The final lock requires precise synchronization.  
+- The timing window is extremely narrow.  
+- Can you automate your steps to achieve perfect timing?
+
+Flag Format: HACKEMON{CHRONO_FLARE_XXXXXXXXXXXXXXXXXXXX}
+
+Challenge Link:https://ctf-web-lake.vercel.app/
+
+Good luck, temporal investigator. The past awaits your touch.
