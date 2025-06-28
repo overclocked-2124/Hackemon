@@ -1,0 +1,6 @@
+Team Rocket has unleashed a cunning cyberattack on the Silph Co. network, stealthily encrypting their secret messages deep inside the malicious packets. As a skilled Cyber Trainer, you are provided with the flag—your key to unlocking the hidden payload buried within the chaotic attack traffic.
+
+Your mission: meticulously analyze the intercepted network capture, harness the power of the given flag to decrypt the concealed payload, and reveal the full secret message that Team Rocket desperately wants to keep hidden.
+
+flagformat-
+hackemon{...}

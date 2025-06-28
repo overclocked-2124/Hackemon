@@ -1,0 +1,15 @@
+Team Rocket has been spotted at a famous restaurant in Lumiose City, but they’ve left only an image as a clue! As a Trainer, your mission is to identify the restaurant from the image, then find the name of the nearest metro station—all without a map or list of stations.
+
+Challenge
+You are given an image of a restaurant.
+Your task is to:
+Identify the name of the restaurant shown in the image.
+Find the name of the nearest metro station to that restaurant.
+
+Submit your answer in the following flag format:
+hackemon{restaurantname+metrostationname}
+(Use lowercase and remove spaces in both names for your submission.)
+
+Example:
+If the restaurant is Rameshwaram Cafe and the nearest metro station is MG Road, your flag would be:
+hackemon{rameshwaramcafe+mgroad}

@@ -1,0 +1,3 @@
+An upcoming Pokémon event in India is about to begin, but Team Rocket has locked all the event timings inside an encrypted file. Your mission is to decrypt the file and reveal the hidden author who leaked the event details. Only by uncovering this insider’s identity can you stop Team Rocket’s plot before it’s too late! 
+
+flag format- hackemon{author_name}
