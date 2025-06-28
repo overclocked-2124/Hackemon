@@ -1,3 +1,5 @@
+Title:Unown Cipher
+
 Team Rocket is broadcasting encrypted psychic messages using a swarm of Unown! Our standard decryption protocols have bounced right off. It appears the data is being processed by a bizarre, heavily obfuscated script that runs client-side. We believe the key to unlocking their communications lies within understanding this script's logic.
 
 Our initial scans suggest the primary logic isn't on the server but is transmitted directly to the client. We're counting on you to dissect their methods.
