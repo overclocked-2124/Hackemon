@@ -1,20 +1,9 @@
-Thematic Title & Story
- Pidgeot's Aerial Recon: Unmasking Team Rocket's Hideout!
-Team Rocket has been spotted using a high-flying drone (disguised as a Pidgeot!) to scout secret locations across the Pokémon world. Professor Oak intercepted a mysterious drone video uploaded by a Trainer on PokéTube (the Pokémon version of YouTube). Your mission: analyze the drone footage, identify the PokéTuber (video author), and report their Trainer email to help the Pokémon League keep tabs on Team Rocket's movements!
-Problem Description (for Trainers)
-Trainer Challenge:
- Team Rocket is hiding rare Pokémon, and only the sharpest eyes can help us track them down!
-Watch the intercepted drone clip below, which was uploaded to PokéTube by a Trainer. Your task is to:
-Figure out who the original PokéTuber (video author) is.
+Team Rocket’s notorious hideout beneath Celadon City’s Game Corner is rumored to house a secret Pokémon—one powerful enough to turn the tide in their favor. Using a high-flying drone disguised as a Pidgeot, Team Rocket scouts the area to protect their prize. Professor Oak intercepted a drone video uploaded by a Trainer on PokéTube. Your mission is to analyze the footage, extract the Trainer’s contact email hidden within, and use the calculator tool at https://calcycal.vercel.app/ to crack the final flag. The secret Pokémon’s identity depends on your success in uncovering this crucial information.
+
+Flag Format: Submit the flag in the format: hackemon{secret_pokemon}
 
 
-Find and submit their Trainer email address (the one they publicly share for contact/business).
 
-
-Use all your Pokédex skills: look for clues in the video, check the PokéTube description, and scour their Trainer profile or social media links.
-Flag format: hackemon{trainer_email_here}
-Example: If you find the email ash@palletmail.com, submit hackemon{ash@palletmail.com}.
-
-
-Answer: hackemon{fintasticfilms1@gmail.com}
+Answer: email=fintasticfilms1@gmail.com
+	flag = hackemon{Mega Charizard X}
 
