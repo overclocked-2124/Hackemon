@@ -1,0 +1,8 @@
+In the heart of Celadon’s mist, a silent spire pierces the clouds—its summit whispered about in old Trainer legends. They say the answers lie not in what is seen, but in what is hidden between the lines of an empty chronicle, twelve leaves long.
+
+Somewhere, a message lies dormant, cloaked in twin veils, awaiting the Trainer wise enough to awaken it. Those who succeed will receive a riddle of the earth itself—numbers that point not to treasure, but to a place where shadows stack upon shadows.
+
+Only by gazing skyward and counting what rises from the ground can the true cipher be broken. Will you see what others overlook and ascend where few have dared?
+
+Flag Format: hackemon{....}
+Flag: hackemon{46}
