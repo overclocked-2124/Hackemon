@@ -1,5 +1,6 @@
 Professor Cy-Oak approaches you with a worried look.
-"Trainer, Team Rocket’s schemes grow ever more cunning! I’ve received an image of Arcanine, but something about it feels... off. The aura around the picture flickers strangely, as if it’s trying to tell us something. Legends say Arcanine can carry messages across great distances—perhaps there’s more to this image than meets the eye.
-Can you investigate and see if you can uncover what secrets lie beneath Arcanine’s blazing mane?"
+"A strange artifact has appeared in the Sinnoh Ruins, inscribed with four shimmering Plates. Ancient whispers hint that only those who can peel back each layer will uncover the identity of the one who shaped all things.
+
+Can you decipher the relic’s secrets and reveal the name that echoes through the ages?"
 
 Flag format : hackemon{....} 
