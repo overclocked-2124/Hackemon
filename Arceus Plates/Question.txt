@@ -1,0 +1,7 @@
+Professor Cy-Oak approaches you with a worried look.
+"A strange artifact has appeared in the Sinnoh Ruins, inscribed with four shimmering Plates. Ancient whispers hint that only those who can peel back each layer will uncover the identity of the one who shaped all things.
+
+Can you decipher the relic’s secrets and reveal the name that echoes through the ages?"
+
+Flag format : hackemon{....}
+Flag: hackemon{arceus}
