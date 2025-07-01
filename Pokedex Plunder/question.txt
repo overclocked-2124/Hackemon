@@ -1,0 +1,8 @@
+Disaster! Team Rocket has stolen Professor Oak’s prototype Pokédex and locked it away in their digital vault. But Team Rocket’s web security is as flimsy as a Caterpie’s String Shot! Professor Oak managed to hide a secret flag inside the database before it was stolen. Your mission as a Trainer: infiltrate Team Rocket’s Pokédex system and retrieve the hidden flag to prove your skills to the Professor! Your Challenge: Team Rocket’s login portal guards the Pokédex.
+
+The Pokedex: https://hackemon-eta.vercel.app/
+
+flag format: hackemon{....}
+
+
+Answer: hackemon{YeaThisWasSetByMe}
