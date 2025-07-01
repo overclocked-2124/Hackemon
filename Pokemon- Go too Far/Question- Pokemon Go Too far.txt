@@ -1,0 +1,17 @@
+Category: OSINT
+Points: 20
+
+Difficulty: Medium
+
+Flag format: hackemon{location} in CamelCase
+Flag: hackemon{megaCharizardX}
+
+A mysterious user going by the name
+FlagFetcherAsh has been active on a few popular Pokémon discussion boards
+lately. In between casual comments about 3D prints and electric-types, they've
+hinted at something... strange.
+One post mentioned a snapshot left by someone, supposedly uploaded
+somewhere in Ash’s “journey logs.” Sources suggest it might contain more than
+just pixels, and that the truth is embedded deeper than what the eye can see.
+Can you follow the trail through his public profiles, locate the file, and uncover
+the hidden coordinates?
