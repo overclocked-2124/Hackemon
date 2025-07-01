@@ -3,4 +3,5 @@ Professor Cy-Oak approaches you with a worried look.
 
 Can you decipher the relic’s secrets and reveal the name that echoes through the ages?"
 
-Flag format : hackemon{....} 
+Flag format : hackemon{....}
+Flag: hackemon{arceus}
