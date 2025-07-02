@@ -9,3 +9,6 @@ Flag Format: hackemon{...}
 Challenge Link:
 
 https://signal-processor.vercel.app/
+
+
+Answer: hackemon{charizard}

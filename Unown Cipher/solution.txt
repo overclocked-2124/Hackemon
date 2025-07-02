@@ -1,0 +1,3 @@
+- First open dev toolbar in browser and go to sources tab and find signal-processor.js file.
+- The code will be obfuscated so copy the whole code inside it and go to any deobfuscate.io website and deobfuscate it.
+- convert the code from the website to a function and pass the Base-Signal and the Shift-key into it , which will give a decrypt key.
