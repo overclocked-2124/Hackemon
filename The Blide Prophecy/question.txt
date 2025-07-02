@@ -1,0 +1,10 @@
+Long, long ago, Team Rocket’s reckless experiments went awry deep within their secret labs. In their quest to create the ultimate Pokémon, they unleashed a glitch so powerful that even Professor Oak refuses to speak its name. Legends whisper that this Pokémon was never meant to be seen by mortal eyes—a digital phantom lost in the code.
+
+Some say “blide was right!”
+What did they mean? Only the sharpest Trainers will uncover the truth.
+
+A mysterious file has resurfaced from those ancient tests. Download it, investigate every byte, and reveal the secret that Team Rocket tried to erase from history!
+
+Flag format: hackemon{...}
+
+Answer : hackemon{Lickichanporylaxchuodactylusaurmandirtle}
