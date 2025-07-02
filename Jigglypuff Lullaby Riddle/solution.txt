@@ -1,0 +1,4 @@
+1.Decode in Cyber chef
+2.Decode using reverse brainfuck
+3.Take the flag and Decode in dcode using affine cypher.
+4.Search for the flag format and get flag.
