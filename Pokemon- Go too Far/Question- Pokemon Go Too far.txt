@@ -4,7 +4,7 @@ Points: 20
 Difficulty: Medium
 
 Flag format: hackemon{location} in CamelCase
-Flag: hackemon{megaCharizardX}
+Flag: hackemon{tokyoTower}
 
 A mysterious user going by the name
 FlagFetcherAsh has been active on a few popular Pokémon discussion boards

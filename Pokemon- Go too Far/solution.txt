@@ -1,0 +1,9 @@
+1.search for FlagFetcherAsh on reddit.
+2.Go to his comments
+3.Find the keychain coversation.
+4.Then go to the github link.
+5.Then go to journety log
+6.Download the 2 pokemon pictures.
+7.Use exif tool, they contain links to pastebin, in those paste bins there are cypher texts available
+8.One encrypted with brainfuck other with reverse brainfuck
+9.Combine them you will get some coordinates they point tokyo towers
