@@ -1,0 +1,6 @@
+Oh no! Team Rocket has infiltrated the official Hackamon Discord server and they are trying to break the rules.
+
+Flag Format:
+All flags in Hackamon follow this format: hackemon{........}
+
+Answer: hackemon{catchemall}

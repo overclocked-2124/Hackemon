@@ -1,0 +1,14 @@
+1.Check for embedded files:
+    steghide info depths_of_mist.jpeg
+    extract:
+    steghide extract -sf depths_of_mist.jpeg -p gyarados
+2.cat clue.txt
+    (encrypted msg Try binwalk after solving the cipher.
+    Password for next layer is: ceruleanshow2025
+    )
+3.Use binwalk to find appended files (or use online aperi’solve gives a downloadable foremost file with zipped flag for which password cerulean2025 is needed)
+    binwalk -e depths_of_mist.jpeg
+4.cd _depths_of_mist.jpeg.extracted/
+5.unzip 123456.zip
+6.Enter password when prompted: ceruleanshow2025
+7.cat flag.txt
