@@ -1,0 +1,7 @@
+Greetings, Trainer! Team Rocket has hidden a secret message inside a password-protected PokéScroll (PDF) and left behind a mysterious image as a clue. Your mission is to uncover the password using the hints hidden in the image, unlock the PokéScroll, and retrieve the secret flag inside. Only the sharpest Trainers can decode this puzzle and claim victory!
+
+Can you crack the code and reveal the hidden knowledge before Team Rocket strikes again?
+
+Flag format: hackemon{...}
+
+Answer:hackemon{cy3pt0_1s_t00_e2sy}

@@ -1,0 +1,4 @@
+1.Use the image given and manually type it in the pokemon script decoder in dcode.
+2.The last 2 letters spell out "hi" which is the password.
+3.Use that to unlock the pdf.
+4.Decrypt the contents of the pdf to reveal the key.
