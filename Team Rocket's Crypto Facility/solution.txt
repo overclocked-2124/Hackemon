@@ -1,0 +1,111 @@
+Team Rocket Crypto Facility: Official Solution Write-up
+Challenge Information
+Name: Team Rocket Crypto Facility
+
+Category: Reverse Engineering / Cryptography / Web Exploitation
+
+Difficulty: Hard
+
+Description: Agent, you've successfully infiltrated Team Rocket's secret cryptographic facility. Intelligence suggests they're using a multi-layered security system based on Pokémon type effectiveness to protect their master plan. Multiple security layers stand between you and their secrets.
+
+Summary
+This challenge was a multi-stage problem that required a combination of binary protocol analysis, web exploitation (SQL Injection), and cryptographic reasoning. The core of the challenge was to chain these vulnerabilities together to recover the final flag.
+
+Step 1: Initial Reconnaissance
+The first step was to explore the web interface. Upon landing on the page, we were presented with a slick, futuristic dashboard. The main interactive elements were:
+
+A button to "INITIATE SCAN".
+
+A section for Binary Protocol Analysis.
+
+A Pokédex Database search interface.
+
+A Cryptographic Analysis Station.
+
+Clicking "INITIATE SCAN" populated the interface with our initial pieces of intelligence:
+
+A list of intercepted binary protocol messages in hex format.
+
+A large Base64-encoded string in the "Encrypted Data Analysis" text area. This was clearly the final encrypted flag we needed to decrypt.
+
+Confirmation of the mission objectives.
+
+My initial thought process was to analyze each component. The encrypted data was a dead end without a key, so I started with the protocol and the database.
+
+Step 2: Binary Protocol Analysis (Context Gathering)
+The hex strings provided looked like custom data. I copied the first message:
+524F434B01001900420C54595045456C6563747269635F444154414E
+
+Pasting this into the Binary Protocol Analyzer and clicking "ANALYZE PROTOCOL" gave us a breakdown of the structure:
+
+Magic Bytes: ROCK (Team Rocket signature)
+
+Pokemon ID: #25 (Pikachu's National Dex number)
+
+Command: 0x42
+
+Payload: "TYPE_Electric_DATA"
+
+Key Takeaway: This was a crucial clue. It confirmed that the protocol was custom and directly tied to Pokémon types, reinforcing the challenge description's hint about "type effectiveness." This wasn't a vulnerability, but it told me what to look for: a system where Pokémon types are significant.
+
+Step 3: Database Exploitation (The "Aha!" Moment)
+The Pokédex Database search was the most promising attack surface. The input field hint, "Enter Pokémon name or SQL...", was a massive signpost pointing towards SQL Injection.
+
+Initial Test: I started with a normal search for PIKACHU. This worked and returned the public, access_level: 1 data for Pikachu.
+
+Testing for SQLi: The classic SQLi payload to test for vulnerabilities is ' OR 1=1 --. I entered this into the search box.
+
+sql
+' OR 1=1 --
+Successful Exploitation: This payload successfully bypassed the WHERE clause in the backend query. The original query was likely something like SELECT * FROM pokemon_secrets WHERE name LIKE '%{query}%' AND access_level <= 1. My injection turned it into ...WHERE name LIKE '%' OR 1=1 -- %' AND access_level <= 1, which evaluates to true for every row, dumping the entire table.
+
+The results now showed hidden entries with higher access levels:
+
+MEW (access_level: 3)
+
+SHADOW_LUGIA (access_level: 5)
+
+The SHADOW_LUGIA entry was the jackpot. It contained the secret data:
+ROCKET_MASTER_KEY_DATA
+
+This was clearly the key material needed for the final decryption step. Other successful payloads included ' UNION SELECT * FROM pokemon_secrets WHERE access_level > 1 --.
+
+Step 4: Decryption and Capturing the Flag
+With the key material (ROCKET_MASTER_KEY_DATA) and the encrypted Base64 string from the initial scan, I had everything needed to finish the challenge.
+
+Open the Submission Modal: Clicking the "SUBMIT FLAG" button opened the final interface.
+
+Select the Algorithm: The dropdown had several options. Based on the context clues (custom protocol, multi-stage encryption, Pokémon theme), the "Team Rocket Multi-Layer Cipher" was the logical choice.
+
+Provide the Key: I pasted the discovered key material into the "Key Material" text area:
+ROCKET_MASTER_KEY_DATA
+
+Submit: Clicking "SUBMIT" sent this information to the server, which performed the decryption.
+
+The server validated the algorithm and key, decrypted the flag, and returned it in a success modal.
+
+The Manual Decryption Process
+For those who wanted to understand the full cryptographic process, it involved these layers in reverse:
+
+Base64 Decode: The initial string was Base64.
+
+AES Decryption (or Simple Decryption in the corrected version): The decoded binary data was encrypted with a symmetric cipher. The key GIOVANNI_MASTER_KEY_2025_SECRET! was hardcoded on the server but was conceptually unlocked by providing the ROCKET_MASTER_KEY_DATA.
+
+Reverse the Custom Type Cipher: The result of the symmetric decryption was still encrypted with the custom Pokémon type cipher. This required reversing the bit rotation and XORing with the correct type values ([Electric, Ground, Water, Grass, Fire]).
+
+The Flag
+The final decrypted flag was:
+CTF{TEAM_ROCKET_CRYPTO_MASTER_2025}
+
+Conclusion & Learnings
+This was a fantastic multi-stage challenge that mirrored a realistic penetration test. It emphasized the importance of chaining vulnerabilities rather than getting stuck on a single problem.
+
+Key Skills Tested:
+
+SQL Injection: Recognizing and exploiting a classic web vulnerability to exfiltrate critical data.
+
+Contextual Analysis: Using information from one part of the system (protocol analysis) to understand another (cryptography).
+
+Reverse Engineering: Deducing the logic of a multi-layered, custom system.
+
+The biggest lesson was that you can't just brute-force the crypto. You have to explore the entire attack surface, find the weakest link (the database), and use the information gained from that exploit to pivot to the final stage.
