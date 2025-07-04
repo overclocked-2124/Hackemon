@@ -1,6 +1,0 @@
-1.Import txt file to cyber chef.
-2.On decoding you get a image.
-3.Google lens that Image.
-4.Takes you to a reddit post.
-5.Find a reply from a user named Blime.
-6.His pokemon name is the flag.
